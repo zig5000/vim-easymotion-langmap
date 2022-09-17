@@ -1111,6 +1111,7 @@ function! s:PromptUser(groups) "{{{
         let char = s:GetChar()
         if (exists("g:EasyMotion_use_lang_map") && g:EasyMotion_use_lang_map ==1)
             let idx_alt = stridx(g:EasyMotion_alt_lang_map,char)
+
             if (idx_alt != -1)
                 let char = g:EasyMotion_eng_lang_map[idx_alt/2]
             endif
