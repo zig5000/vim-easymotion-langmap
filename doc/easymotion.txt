@@ -28,6 +28,7 @@ CONTENTS                                                 *easymotion-contents*
        EasyMotion_use_migemo ........... |EasyMotion_use_migemo|
        EasyMotion_use_upper  ........... |EasyMotion_use_upper|
        EasyMotion_enter_jump_first ..... |EasyMotion_enter_jump_first|
+       EasyMotion_use_lang_map ......... |EasyMotion_use_lang_map|
        EasyMotion_prompt ............... |EasyMotion_prompt|
        EasyMotion_highlight ............ |EasyMotion_highlight|
        EasyMotion_add_search_history ... |EasyMotion_add_search_history|
@@ -937,6 +938,19 @@ Example:
 <
 Default: 0
 
+Use Language map correction for russian\non-latin	*EasyMotion_use_lang_map*
+							*g:EasyMotion_use_lang_map*
+
+    Use that when you need decrease layout switch count, when you search
+    non-latin strings with EasyMotion
+
+Example:
+    
+    let g:EasyMotion_use_lang_map = 1
+    let g:EasyMotion_eng_lang_map="qwertyuiop[]asdfghjkl;'zxcvbnm,."
+    let g:EasyMotion_alt_lang_map="йцукенгшщзхъфывапролджэячсмитьбю"
+
+Default: 0
 
 Customize command line prompt                               *EasyMotion_prompt*
                                                           *g:EasyMotion_prompt*
